@@ -87,6 +87,7 @@ TEMPLATES = [
         },
     },
 ]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 WSGI_APPLICATION = 'django_movie.wsgi.application'
 
@@ -166,12 +167,9 @@ LOCALE_PATHS = (os.path.join(os.path.dirname(__file__), '../locale/'),)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'static'))]
-
-
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
