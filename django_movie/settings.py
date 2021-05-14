@@ -69,6 +69,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware'
 ]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 ROOT_URLCONF = 'django_movie.urls'
 
@@ -87,7 +88,6 @@ TEMPLATES = [
         },
     },
 ]
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 WSGI_APPLICATION = 'django_movie.wsgi.application'
 
