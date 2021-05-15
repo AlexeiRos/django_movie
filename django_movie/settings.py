@@ -147,7 +147,7 @@ EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'funkymonkeasy@gmail.com'
-EMAIL_HOST_PASSWORD = 'palading25'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_PORT = 465
 
 gettext = lambda s: s
