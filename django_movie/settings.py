@@ -163,6 +163,7 @@ LOCALE_PATHS = (os.path.join(os.path.dirname(__file__), '../locale/'),)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 if DEBUG:
    STATICFILES_DIRS = [
    os.path.join(BASE_DIR, 'static'),
