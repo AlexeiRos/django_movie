@@ -162,6 +162,11 @@ LOCALE_PATHS = (os.path.join(os.path.dirname(__file__), '../locale/'),)
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATICFILES_FINDERS = (
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder"
+)
+
 STATIC_URL = '/static/'
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
